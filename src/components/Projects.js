@@ -1,8 +1,10 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
+import projImg1 from "../assets/img/project-img1.webp";
+import projImg2 from "../assets/img/project-img2.webp";
 import projImg3 from "../assets/img/project-img3.png";
+import projImg4 from "../assets/img/project-img4.jpg";
+import projImg5 from "../assets/img/comingsoon.webp";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -11,34 +13,34 @@ export const Projects = () => {
 
   const projects = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "AirBnb Clone",
+      description: "My first project using Ruby on Rails",
       imgUrl: projImg1,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "My-Pokedex",
+      description: "My first project using React and consuming an API to display content",
       imgUrl: projImg2,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Nudge 🐘",
+      description: "Nudge is a mobile app that as ways to influence the behavior and decision-making of groups or individuals, improving decisions about health, wealth and happiness",
       imgUrl: projImg3,
     },
     {
-      title: "Business Startup",
+      title: "New Project Coming 😁",
       description: "Design & Development",
-      imgUrl: projImg1,
+      imgUrl: projImg5,
     },
     {
-      title: "Business Startup",
+      title: "New Project Coming 😁",
       description: "Design & Development",
-      imgUrl: projImg2,
+      imgUrl: projImg5,
     },
     {
-      title: "Business Startup",
+      title: "New Project Coming 😁",
       description: "Design & Development",
-      imgUrl: projImg3,
+      imgUrl: projImg5,
     },
   ];
 
@@ -92,7 +94,7 @@ export const Projects = () => {
           </Col>
         </Row>
       </Container>
-      <img className="background-image-right" src={colorSharp2}></img>
+      <img className="background-image-right" src={colorSharp2} alt=""></img>
     </section>
   )
 }
