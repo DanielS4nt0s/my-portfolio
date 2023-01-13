@@ -105,6 +105,12 @@ nav.navbar.scrolled {
   padding: 0px 0;
   background-color: #121212;
 }
+nav.navbar.scrolled .tagline {
+  color: transparent;
+  background: #121212;
+  border: none;
+  transition: 0.32s ease-in-out;
+}
 nav.navbar a.navbar-brand {
   width: 9%;
 }
@@ -251,7 +257,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-size: cover;
   background-repeat: no-repeat;
 }
-.banner .tagline {
+.tagline {
+  color: white;
   font-weight: 700;
   letter-spacing: 0.8px;
   padding: 8px 10px;
@@ -263,6 +270,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border: 1px solid rgba(255, 255, 255, 0.5);
   font-size: 20px;
   margin-bottom: 16px;
+  margin-left: 80px;
   display: inline-block;
 }
 .banner h1 {
@@ -487,7 +495,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   right: 0;
   z-index: -4;
 }
-
+.proj-link {
+  margin-top: 20px;
+}
+.proj-link a {
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+}
+.proj-link a:hover {
+  color: black;
+}
 /************ Projects Css ************/
 .contact {
   background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);

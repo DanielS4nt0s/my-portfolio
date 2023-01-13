@@ -1,3 +1,5 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable no-unused-vars */
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import headerImg from "../assets/img/header-img.svg";
@@ -55,12 +57,11 @@ export const Banner = () => {
             <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <span className="tagline">Welcome to my Portfolio</span>
                 <h1>{`Hi! I'm Daniel`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>I am a highly skilled and motivated full-stack developer seeking my first experience in the industry. I have knowledge in both front-end and back-end development.
-My skills include proficiency in languages such as JavaScript, and Ruby, and experience with frameworks such as Ruby on Rails and React. I am also well-versed in HTML and CSS development methodologies.
- I am looking for new challenges and opportunities to learn and develop my skills, making a meaningful impact on the projects that I will work on.</p>
-                  <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
+                <p>I am a highly skilled and motivated full-stack developer seeking my first experience in the industry. I have knowledge in both front-end and back-end development.
+                  My skills include proficiency in languages such as JavaScript, and Ruby, and experience with frameworks such as Ruby on Rails and React. I am also well-versed in HTML and CSS development methodologies.
+                  I am looking for new challenges and opportunities to learn and develop my skills, making a meaningful impact on the projects that I will work on.</p>
+                <button href="#projects" onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
               </div>}
             </TrackVisibility>
           </Col>
